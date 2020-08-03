@@ -6,6 +6,6 @@
     }
   ],
   "namespace": "",
-  "sfdcLoginUrl": "empathetic-goat-fm78tb-dev-ed.my.salesforce.com",
+  "sfdcLoginUrl": "https://login.salesforce.com", 
   "sourceApiVersion": "48.0"
 }
