@@ -34,11 +34,10 @@
     </types>
     <types>
         <members>*</members>
+        <members>User</members>
+        <members>Account</members>
+        <members>Contact</members>
         <name>CustomObject</name>
-    </types>
-        <types>
-        <members>*</members>
-        <name>Object</name>
     </types>
     <version>48.0</version>
 </Package>
