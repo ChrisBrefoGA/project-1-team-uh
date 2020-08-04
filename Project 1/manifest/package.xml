@@ -39,5 +39,25 @@
         <members>Contact</members>
         <name>CustomObject</name>
     </types>
-    <version>48.0</version>
+    <types>
+        <members>Postal_Service</members>
+        <name>CustomApplication</name>
+   </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+   </types>
+   <types>
+        <members>Postal_Service_UtilityBar</members>
+        <name>FlexiPage</name>
+   </types>
+<!--  <types>
+        <members>*</members>
+        <name>Report</name>
+   </types>
+    <types>
+        <members>*</members>
+        <name>Dashboard</name>
+   </types>-->
+    <version>48.0</version> 
 </Package>
