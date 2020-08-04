@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Requirement</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT( Status__c) == &apos;Delivered&apos; &amp;&amp; ISBLANK( Delivered_Time__c)</errorConditionFormula>
+    <errorMessage>Please make sure the delivery date and time is filled out if the package has been delivered</errorMessage>
+</ValidationRule>
