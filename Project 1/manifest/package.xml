@@ -43,9 +43,13 @@
         <members>Postal_Service</members>
         <name>CustomApplication</name>
    </types>
-   <types>
+    <types>
         <members>*</members>
         <name>CustomTab</name>
+   </types>
+   <types>
+        <members>Postal_Service_UtilityBar</members>
+        <name>FlexiPage</name>
    </types>
 <!--  <types>
         <members>*</members>
