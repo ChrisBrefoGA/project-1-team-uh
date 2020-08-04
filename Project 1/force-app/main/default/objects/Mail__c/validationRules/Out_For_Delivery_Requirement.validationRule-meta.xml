@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Out_For_Delivery_Requirement</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(Status__c) == &apos;Out for Delivery&apos; &amp;&amp; ISBLANK(On_Route__c)</errorConditionFormula>
+    <errorMessage>Please make sure the route it&apos;s being delivered on is filled out</errorMessage>
+</ValidationRule>
