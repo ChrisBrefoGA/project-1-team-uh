@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0053t000007u1WhAAI",
+    "createdByName": "Automated Process",
+    "createdDate": "2020-08-01T22:43:53.000Z",
+    "fileName": "reports/unfiled$public/flow_screen_prebuilt_report.report",
+    "fullName": "unfiled$public/flow_screen_prebuilt_report",
+    "id": "00O3t000006Y7LsEAK",
+    "lastModifiedById": "0053t000007u1WhAAI",
+    "lastModifiedByName": "Automated Process",
+    "lastModifiedDate": "2020-08-01T22:43:53.000Z",
+    "manageableState": "unmanaged",
+    "type": "Report"
+  }
+}
