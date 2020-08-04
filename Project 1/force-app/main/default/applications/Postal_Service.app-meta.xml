@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#DE1792</headerColor>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>An app for a delivery postal service</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Postal Service</label>
+    <navType>Standard</navType>
+    <tabs>Address__c</tabs>
+    <tabs>Assignment__c</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Inhabitant__c</tabs>
+    <tabs>Mail__c</tabs>
+    <tabs>Route__c</tabs>
+    <tabs>standard-report</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Postal_Service_UtilityBar</utilityBar>
+</CustomApplication>
