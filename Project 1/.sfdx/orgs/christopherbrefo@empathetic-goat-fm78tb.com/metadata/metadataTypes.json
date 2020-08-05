@@ -692,6 +692,13 @@
         "xmlName": "SiteDotCom"
       },
       {
+        "directoryName": "networks",
+        "inFolder": false,
+        "metaFile": false,
+        "suffix": "network",
+        "xmlName": "Network"
+      },
+      {
         "directoryName": "networkBranding",
         "inFolder": false,
         "metaFile": true,
@@ -704,6 +711,34 @@
         "metaFile": false,
         "suffix": "brandingSet",
         "xmlName": "BrandingSet"
+      },
+      {
+        "directoryName": "communityThemeDefinitions",
+        "inFolder": false,
+        "metaFile": false,
+        "suffix": "communityThemeDefinition",
+        "xmlName": "CommunityThemeDefinition"
+      },
+      {
+        "directoryName": "communityTemplateDefinitions",
+        "inFolder": false,
+        "metaFile": false,
+        "suffix": "communityTemplateDefinition",
+        "xmlName": "CommunityTemplateDefinition"
+      },
+      {
+        "directoryName": "navigationMenus",
+        "inFolder": false,
+        "metaFile": false,
+        "suffix": "navigationMenu",
+        "xmlName": "NavigationMenu"
+      },
+      {
+        "directoryName": "audience",
+        "inFolder": false,
+        "metaFile": false,
+        "suffix": "audience",
+        "xmlName": "Audience"
       },
       {
         "directoryName": "flowCategories",
@@ -734,6 +769,13 @@
         "xmlName": "LightningOnboardingConfig"
       },
       {
+        "directoryName": "webStoreTemplates",
+        "inFolder": false,
+        "metaFile": false,
+        "suffix": "webStoreTemplate",
+        "xmlName": "WebStoreTemplate"
+      },
+      {
         "directoryName": "customHelpMenuSections",
         "inFolder": false,
         "metaFile": false,
@@ -746,6 +788,44 @@
         "metaFile": false,
         "suffix": "prompt",
         "xmlName": "Prompt"
+      },
+      {
+        "childXmlNames": [
+          "ManagedTopic"
+        ],
+        "directoryName": "managedTopics",
+        "inFolder": false,
+        "metaFile": false,
+        "suffix": "managedTopics",
+        "xmlName": "ManagedTopics"
+      },
+      {
+        "directoryName": "moderation",
+        "inFolder": false,
+        "metaFile": false,
+        "suffix": "keywords",
+        "xmlName": "KeywordList"
+      },
+      {
+        "directoryName": "userCriteria",
+        "inFolder": false,
+        "metaFile": false,
+        "suffix": "userCriteria",
+        "xmlName": "UserCriteria"
+      },
+      {
+        "directoryName": "moderation",
+        "inFolder": false,
+        "metaFile": false,
+        "suffix": "rule",
+        "xmlName": "ModerationRule"
+      },
+      {
+        "directoryName": "cmsConnectSource",
+        "inFolder": false,
+        "metaFile": false,
+        "suffix": "cmsConnectSource",
+        "xmlName": "CMSConnectSource"
       },
       {
         "directoryName": "managedContentTypes",
