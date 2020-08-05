@@ -60,14 +60,15 @@
         <name>CustomField</name>
     </types>
     <types>
-        <members>*</​members>
-        <name>Custom​Metadata</name>
-    </types>
-    <types>
         <members>*</members>
         <name>Layout</name>
     </types>
-<!--<types>
+<!--
+    <types>
+        <members>*</members>
+        <name>Custom​Metadata</name>
+    </types>
+    <types>
         <members>*</members>
         <name>Report</name>
    </types>

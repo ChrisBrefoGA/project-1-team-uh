@@ -1,31 +1,55 @@
-<apex:page controller="AccountDisplayController">
-<apex:form >
+<apex:page controller="AccountDisplayController" standardStylesheets="false">
+
+    <style>
+        .formyform{
+        	width: 1000px;
+        	border: solid 2px;
+        }
+        .blockyblock th{
+        	color: black;
+        	background-color: purple;
+        	background-size: auto;
+        	horizontal-align: middle;
+        	padding-left: 475px;
+        	
+        }
+        
+        .blockyblock td{
+        	color: green;
+        	horizontal-align: middle;
+        	padding-left: 475px;
+			background-size: auto;
+        }
+    
+    </style>
+    
+<apex:form styleClass="formyform">
     <apex:pageBlock >
-        <apex:pageBlockTable value="{!acc}" var="ac">
+        <apex:pageBlockTable value="{!acc}" var="ac" styleClass="blockyblock">
             <apex:column value="{!ac.Name}"/><br />
         </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
-        	<apex:column value="{!ac.Type}"/><br />
+        <apex:pageBlockTable value="{!acc}" var="ac" styleClass="blockyblock">
+            <apex:column value="{!ac.Type}"/><br />
         </apex:pageBlockTable>
-		<apex:pageBlockTable value="{!acc}" var="ac">
-			 <apex:column value="{!ac.AccountNumber}"/><br />
+        <apex:pageBlockTable value="{!acc}" var="ac" styleClass="blockyblock">
+             <apex:column value="{!ac.AccountNumber}"/><br />
         </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
-    		 <apex:column value="{!ac.Type}"/><br />        
+        <apex:pageBlockTable value="{!acc}" var="ac" styleClass="blockyblock">
+             <apex:column value="{!ac.Type}"/><br />        
         </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
-			<apex:column value="{!ac.Industry}"/><br />
+        <apex:pageBlockTable value="{!acc}" var="ac" styleClass="blockyblock">
+            <apex:column value="{!ac.Industry}"/><br />
         </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
-			<apex:column value="{!ac.Phone}"/><br />
+        <apex:pageBlockTable value="{!acc}" var="ac" styleClass="blockyblock">
+            <apex:column value="{!ac.Phone}"/><br />
         </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
-		    <apex:column value="{!ac.NumberOfEmployees}"/><br />
+        <apex:pageBlockTable value="{!acc}" var="ac" styleClass="blockyblock">
+            <apex:column value="{!ac.NumberOfEmployees}"/><br />
         </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
-			<apex:column value="{!ac.Website}"/><br />
+        <apex:pageBlockTable value="{!acc}" var="ac" styleClass="blockyblock">
+            <apex:column value="{!ac.Website}"/><br />
         </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
+        <apex:pageBlockTable value="{!acc}" var="ac" styleClass="blockyblock">
             <apex:column value="{!ac.YearStarted}"/><br />
         </apex:pageBlockTable>
          <apex:inlineEditSupport event="ondblClick" showOnEdit="saveButton" />
