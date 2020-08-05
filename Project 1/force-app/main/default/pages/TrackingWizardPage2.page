@@ -1,0 +1,34 @@
+<apex:page controller="TrackingWizard" standardStylesheets="false">
+    <apex:form styleClass="formyform">
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!mailPackage}" var="mp" styleClass="blockyblock">
+                <apex:column value="{!mp.Name}"/><br />
+            </apex:pageBlockTable>
+            <apex:pageBlockTable value="{!mailPackage}" var="mp" styleClass="blockyblock">
+                <apex:column value="{!mp.Delivered_Time__c}"/><br />
+            </apex:pageBlockTable>
+                    <apex:pageBlockTable value="{!mailPackage}" var="mp" styleClass="blockyblock">
+                <apex:column value="{!mp.Destination__c}"/><br />
+            </apex:pageBlockTable>
+                    <apex:pageBlockTable value="{!mailPackage}" var="mp" styleClass="blockyblock">
+                <apex:column value="{!mp.On_Route__c}"/><br />
+            </apex:pageBlockTable>
+                   <apex:pageBlockTable value="{!mailPackage}" var="mp" styleClass="blockyblock">
+                <apex:column value="{!mp.Receiver__c}"/><br />
+            </apex:pageBlockTable>
+            <apex:pageBlockTable value="{!mailPackage}" var="mp">
+                <apex:column value="{!mp.Shipping_To__c}"/><br />
+            </apex:pageBlockTable>
+            <apex:pageBlockTable value="{!mailPackage}" var="mp">
+                <apex:column value="{!mp.Status__c}"/><br />
+            </apex:pageBlockTable>
+            <apex:pageBlockTable value="{!mailPackage}" var="mp">
+                <apex:column value="{!mp.Tracking_Code__c}"/><br />
+            </apex:pageBlockTable>
+            <apex:pageBlockTable value="{!mailPackage}" var="mp">
+                <apex:column value="{!mp.Value__c}"/><br />
+            </apex:pageBlockTable>
+                  <apex:commandButton value="Finished" action="{!page2_previous}"/>         
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
