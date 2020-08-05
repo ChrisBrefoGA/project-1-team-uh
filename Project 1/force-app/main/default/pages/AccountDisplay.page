@@ -1,30 +1,37 @@
 <apex:page controller="AccountDisplayController">
-<!--
-    Name, Type, Number, Billing Address, Active, 
-    Industry, Phone, Shipping Adress, Employees, YearStarted, Website
--->
 <apex:form >
     <apex:pageBlock >
         <apex:pageBlockTable value="{!acc}" var="ac">
-            <apex:outputLabel value="Name: "/><br />
-            <apex:outputText value="{!ac.Name}"/><br />
-            <apex:outputLabel value="Type:"/><br />
-            <apex:outputText value="{!ac.Type}"/><br />
-            <apex:outputLabel value="Account Number:"/><br />
-            <apex:outputText value="{!ac.AccountNumber}"/><br />
-            <apex:outputLabel value="Active:"/><br />
-            <apex:selectCheckboxes value="{!ac.Type}"/><br />
-            <apex:outputLabel value="Industry:"/><br />
-            <apex:outputText value="{!ac.Industry}"/><br />
-            <apex:outputLabel value="Phone Number:"/><br />
-            <apex:outputText value="{!ac.Phone}"/><br />
-            <apex:outputLabel value="Employees:"/><br />
-            <apex:outputText value="{!ac.NumberOfEmployees}"/><br />
-            <apex:outputLabel value="Website:"/><br />
-            <apex:outputText value="{!ac.Website}"/><br />
-            <apex:outputLabel value="Year Opened:"/><br />
-            <apex:outputText value="{!ac.YearStarted}"/><br />
+            <apex:column value="{!ac.Name}"/><br />
         </apex:pageBlockTable>
+        <apex:pageBlockTable value="{!acc}" var="ac">
+        	<apex:column value="{!ac.Type}"/><br />
+        </apex:pageBlockTable>
+		<apex:pageBlockTable value="{!acc}" var="ac">
+			 <apex:column value="{!ac.AccountNumber}"/><br />
+        </apex:pageBlockTable>
+        <apex:pageBlockTable value="{!acc}" var="ac">
+    		 <apex:column value="{!ac.Type}"/><br />        
+        </apex:pageBlockTable>
+        <apex:pageBlockTable value="{!acc}" var="ac">
+			<apex:column value="{!ac.Industry}"/><br />
+        </apex:pageBlockTable>
+        <apex:pageBlockTable value="{!acc}" var="ac">
+			<apex:column value="{!ac.Phone}"/><br />
+        </apex:pageBlockTable>
+        <apex:pageBlockTable value="{!acc}" var="ac">
+		    <apex:column value="{!ac.NumberOfEmployees}"/><br />
+        </apex:pageBlockTable>
+        <apex:pageBlockTable value="{!acc}" var="ac">
+			<apex:column value="{!ac.Website}"/><br />
+        </apex:pageBlockTable>
+        <apex:pageBlockTable value="{!acc}" var="ac">
+            <apex:column value="{!ac.YearStarted}"/><br />
+        </apex:pageBlockTable>
+         <apex:inlineEditSupport event="ondblClick" showOnEdit="saveButton" />
+        <apex:pageBlockButtons >
+              <apex:commandButton value="Save" action="{!save}" id="saveButton" />
+        </apex:pageBlockButtons>
     </apex:pageBlock>
 </apex:form>
 

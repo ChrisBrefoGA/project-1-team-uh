@@ -51,6 +51,10 @@
         <members>Postal_Service_UtilityBar</members>
         <name>FlexiPage</name>
    </types>
+   <types>
+        <members>*</members>
+        <name>Profile</name>
+   </types>
 <!--<types>
         <members>*</members>
         <name>Report</name>
