@@ -6,7 +6,7 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
-        <apexClass>BatchApex</apexClass>
+        <apexClass>AccountDisplayController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -79,10 +79,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>LightningSelfRegisterControllerTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>MailPackageController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -538,6 +534,10 @@
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.Person</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>AccountBrand-Account Brand Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -814,6 +814,10 @@
         <layout>WorkThanks-Thanks Layout</layout>
     </layoutAssignments>
     <pageAccesses>
+        <apexPage>AccountDisplay</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>AnswersHome</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -874,10 +878,6 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>Packages</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>SiteLogin</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -913,6 +913,11 @@
         <apexPage>UnderConstruction</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Account.Person</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <tabVisibilities>
         <tab>Address__c</tab>
         <visibility>Hidden</visibility>
