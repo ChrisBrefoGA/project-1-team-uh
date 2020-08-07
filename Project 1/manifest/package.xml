@@ -75,7 +75,6 @@
         <members>*</members>
         <name>Queue</name>
    </types>
-
    <!--
     <types>
         <members>*</members>

@@ -11,13 +11,11 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Postal Service</label>
     <navType>Standard</navType>
-<<<<<<< HEAD
     <tabs>standard-Account</tabs>
-=======
->>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
     <tabs>Address__c</tabs>
     <tabs>Assignment__c</tabs>
     <tabs>standard-Contact</tabs>
+    <tabs>standard-Dashboard</tabs>
     <tabs>Inhabitant__c</tabs>
     <tabs>Mail__c</tabs>
     <tabs>Route__c</tabs>
