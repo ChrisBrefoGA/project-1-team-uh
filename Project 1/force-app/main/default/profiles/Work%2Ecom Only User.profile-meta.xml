@@ -6,10 +6,13 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+<<<<<<< HEAD
         <apexClass>AccountDisplayController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+=======
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
         <apexClass>BatchApex</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -114,7 +117,11 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+<<<<<<< HEAD
         <apexClass>TrackingWizard</apexClass>
+=======
+        <apexClass>WebToCaseFormController</apexClass>
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
         <enabled>false</enabled>
     </classAccesses>
     <custom>false</custom>
@@ -289,6 +296,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+<<<<<<< HEAD
         <editable>true</editable>
         <field>Address__c.Address_City__c</field>
         <readable>true</readable>
@@ -302,16 +310,40 @@
         <editable>true</editable>
         <field>Address__c.Address_ZipCode__c</field>
         <readable>true</readable>
+=======
+        <editable>false</editable>
+        <field>Address__c.Address_City__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Address__c.Address_Street__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Address__c.Address_ZipCode__c</field>
+        <readable>false</readable>
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Address__c.Mailing_Address__c</field>
+<<<<<<< HEAD
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Assignment__c.Deliverer__c</field>
         <readable>true</readable>
+=======
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Assignment__c.Deliverer__c</field>
+        <readable>false</readable>
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -484,6 +516,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+<<<<<<< HEAD
         <editable>true</editable>
         <field>Mail__c.Delivered_Time__c</field>
         <readable>true</readable>
@@ -507,6 +540,31 @@
         <editable>true</editable>
         <field>Mail__c.Status__c</field>
         <readable>true</readable>
+=======
+        <editable>false</editable>
+        <field>Mail__c.Delivered_Time__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Mail__c.On_Route__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Mail__c.Receiver__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Mail__c.Shipping_To__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Mail__c.Status__c</field>
+        <readable>false</readable>
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -542,10 +600,13 @@
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Account-Account Layout</layout>
         <recordType>Account.Person</recordType>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
         <layout>AccountBrand-Account Brand Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -822,10 +883,13 @@
         <layout>WorkThanks-Thanks Layout</layout>
     </layoutAssignments>
     <pageAccesses>
+<<<<<<< HEAD
         <apexPage>AccountDisplay</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+=======
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
         <apexPage>AnswersHome</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -910,6 +974,7 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+<<<<<<< HEAD
         <apexPage>TrackingWizardPage1</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -930,6 +995,19 @@
         <recordType>Account.Person</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+=======
+        <apexPage>Unauthorized</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>UnderConstruction</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>WebToCaseForm</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
     <tabVisibilities>
         <tab>Address__c</tab>
         <visibility>Hidden</visibility>

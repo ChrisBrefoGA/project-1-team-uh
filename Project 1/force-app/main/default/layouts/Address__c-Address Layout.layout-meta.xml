@@ -8,27 +8,11 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Name</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>Address_State__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Address_ZipCode__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Address_Street__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Address_City__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Mailing_Address__c</field>
+                <behavior>Required</behavior>
+                <field>Name</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -67,6 +51,7 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+<<<<<<< HEAD
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>Inhabitant__c.Inhabitant_Address__c</relatedList>
@@ -79,6 +64,11 @@
         <fields>NAME</fields>
         <relatedList>Route__c.Route_Address__c</relatedList>
     </relatedLists>
+=======
+    <miniLayout>
+        <fields>Address_State__c</fields>
+    </miniLayout>
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

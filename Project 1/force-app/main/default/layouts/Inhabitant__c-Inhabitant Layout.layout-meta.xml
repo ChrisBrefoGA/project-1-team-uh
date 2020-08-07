@@ -8,15 +8,15 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Name</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>Inhabitant_Contact__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Inhabitant_Address__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Name</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>
@@ -50,6 +50,13 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+<<<<<<< HEAD
+=======
+    <miniLayout>
+        <fields>Inhabitant_Contact__c</fields>
+        <fields>Inhabitant_Address__c</fields>
+    </miniLayout>
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
     <relatedLists>
         <fields>TASK.SUBJECT</fields>
         <fields>TASK.WHO_NAME</fields>
@@ -68,10 +75,6 @@
         <fields>CORE.USERS.FULL_NAME</fields>
         <fields>TASK.LAST_UPDATE</fields>
         <relatedList>RelatedHistoryList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Mail__c.Receiver__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

@@ -6,10 +6,13 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+<<<<<<< HEAD
         <apexClass>AccountDisplayController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+=======
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
         <apexClass>BatchApex</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -114,7 +117,11 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+<<<<<<< HEAD
         <apexClass>TrackingWizard</apexClass>
+=======
+        <apexClass>WebToCaseFormController</apexClass>
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
         <enabled>true</enabled>
     </classAccesses>
     <custom>false</custom>
@@ -542,10 +549,13 @@
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Account-Account Layout</layout>
         <recordType>Account.Person</recordType>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
         <layout>AccountBrand-Account Brand Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -885,10 +895,13 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <pageAccesses>
+<<<<<<< HEAD
         <apexPage>AccountDisplay</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+=======
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
         <apexPage>AnswersHome</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -973,6 +986,7 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+<<<<<<< HEAD
         <apexPage>TrackingWizardPage1</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -993,6 +1007,19 @@
         <recordType>Account.Person</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+=======
+        <apexPage>Unauthorized</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>UnderConstruction</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>WebToCaseForm</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+>>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
     <tabVisibilities>
         <tab>Address__c</tab>
         <visibility>DefaultOn</visibility>
