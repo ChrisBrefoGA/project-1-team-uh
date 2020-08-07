@@ -10,6 +10,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>BatchApex</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ChangePasswordController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -79,6 +83,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>LightningSelfRegisterControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MailPackageController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -647,6 +655,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>MyProfilePage</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>Packages</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
