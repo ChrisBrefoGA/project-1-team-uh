@@ -1,0 +1,13 @@
+<apex:page controller="TrackingWizard">
+    <p>Please type in the tracking code for the package you want to get the status of:</p>
+    <div>
+       <apex:form >
+           <apex:pageBlock >
+               <apex:outputLabel value="Tracking Code"/><br/>
+               <apex:outputLabel value="{!errorMessage}"/><br/>
+               <apex:inputText value="{!tCode}"/>
+               <apex:commandButton value="Get Code" action="{!page1_next}"/>
+            </apex:pageBlock>
+        </apex:form>
+    </div>
+</apex:page>
