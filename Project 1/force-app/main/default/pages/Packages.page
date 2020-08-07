@@ -1,0 +1,22 @@
+<apex:page controller="MailPackageController" >
+    <h1>
+        {!$User.Email}
+        {!$User.FirstName}
+        {!$User.LastName}
+    </h1>
+    <apex:form >
+        <apex:pageBlock >
+        	<apex:pageBlockTable value="{!userMails}" var="mail">
+                <apex:column value="{!mail.name}"/>
+            	<apex:column value="{!mail.Tracking_Code__c}"/>
+                <apex:column value="{!mail.Status__c}"/>
+            	<apex:column value="{!mail.Receiver__c}"/>
+                <apex:column value="{!mail.Value__c}"/>
+                <apex:column value="{!mail.Shipping_To__c}"/>
+                <apex:column value="{!mail.On_Route__c}"/>
+                <apex:column value="{!mail.Delivered_Time__c}"/>
+            </apex:pageBlockTable>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
