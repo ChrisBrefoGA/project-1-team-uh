@@ -1,0 +1,18 @@
+<apex:page controller="WebToCaseFormController" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:outputLabel > Enter your case subject, and describe with as much detail below.</apex:outputLabel>
+                <br />
+                <apex:inputField value="{!newCase.reason}" required="true"/>
+                <br />
+                <apex:inputField value="{!newCase.subject}" required="true"/>
+                <br />
+                <apex:inputField value="{!newCase.Description}" required="true"/>          
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Submit!" action="{!insertCase}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

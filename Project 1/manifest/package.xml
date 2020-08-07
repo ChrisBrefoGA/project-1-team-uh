@@ -71,6 +71,11 @@
         <members>Mail_Reports</members>
         <name>ReportType</name>
    </types>
+    <types>
+        <members>*</members>
+        <name>Queue</name>
+   </types>
+
    <!--
     <types>
         <members>*</members>
