@@ -6,7 +6,7 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
-        <apexClass>AccountDisplayController</apexClass>
+        <apexClass>BatchApex</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -79,6 +79,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>LightningSelfRegisterControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MailPackageController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -873,10 +877,6 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <pageAccesses>
-        <apexPage>AccountDisplay</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>AnswersHome</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -934,6 +934,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>MyProfilePage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>Packages</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
