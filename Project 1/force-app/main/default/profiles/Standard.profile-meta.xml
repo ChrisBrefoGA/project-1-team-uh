@@ -6,13 +6,6 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
-<<<<<<< HEAD
-        <apexClass>AccountDisplayController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-=======
->>>>>>> 1e5a0288a6279de6a1a2d58f17eaaca27e305520
         <apexClass>BatchApex</apexClass>
         <enabled>false</enabled>
     </classAccesses>

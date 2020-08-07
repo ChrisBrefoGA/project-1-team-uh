@@ -4,7 +4,7 @@
         {!$User.FirstName}
         {!$User.LastName}
     </h1>
-    <apex:form >
+    <apex:form style="display:{!IF((inhabitants == null || userMails == null), 'none','block')}" >
         <apex:pageBlock >
         	<apex:pageBlockTable value="{!userMails}" var="mail">
                 <apex:column value="{!mail.name}"/>
@@ -16,7 +16,9 @@
                 <apex:column value="{!mail.On_Route__c}"/>
                 <apex:column value="{!mail.Delivered_Time__c}"/>
             </apex:pageBlockTable>
-
         </apex:pageBlock>
     </apex:form>
+    <h1 value ="{!errorMessage}" style="display:{!IF((inhabitants == null || userMails == null), 'block','none')}">
+        
+    </h1>
 </apex:page>
