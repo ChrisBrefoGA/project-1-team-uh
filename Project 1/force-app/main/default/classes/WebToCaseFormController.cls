@@ -7,8 +7,9 @@ public class WebToCaseFormController {
     public ID webCaseID {get;set;}
     
     public WebToCaseFormController() {
+        User u = [SELECT ContactId FROM User WHERE id =: userID];
         //grab contact related to user; for customer/partner liscence, will only ever have one contact. we do [0] because query returns list.
-     	contact = [SELECT id, firstName, LastName FROM Contact WHERE ownerID =: userID ][0];
+     	contact = [SELECT id, firstName, LastName FROM Contact WHERE id =: u.ContactId];
         /*all web cases will be assigned to the "NAWebCases" queue.
         while we have case assignment rules set up to do so, apex code automatically assigns
 		to the current user, so we programmatically assign it to the id of "NAWebCases" queue*/

@@ -11,12 +11,12 @@ public class MailPackageController {
         //we have USERID
      	//select all contacts where contact.owner ID == userID
      	// for this list, select all inhabitants that each contact owns, and push their mails into a list
-     	User u = [SELECT ContactId FROM User WHERE id =: userId];
-     	contact = [SELECT id FROM Contact WHERE id =: u.ContactId];
-        inhabitants = new List<Inhabitant__c>();
-        userMails = new List<Mail__c>();
-        errorMessage = '';
         try{
+            User u = [SELECT ContactId FROM User WHERE id =: userId];
+            contact = [SELECT id FROM Contact WHERE id =: u.ContactId];
+            inhabitants = new List<Inhabitant__c>();
+            userMails = new List<Mail__c>();
+            errorMessage = '';
             for(Inhabitant__c inhab:[SELECT id FROM Inhabitant__c WHERE Inhabitant_Contact__c =: contact.id]){
                     inhabitants.add(inhab);
             }      
@@ -26,7 +26,7 @@ public class MailPackageController {
         }
         try{
             for(Inhabitant__c inhab:inhabitants){
-                for(Mail__c mail:[SELECT name, on_route__c, Shipping_to__c, Receiver__c, Tracking_Code__c, Status__c, Delivered_Time__c, Value__c FROM Mail__c WHERE Receiver__c =: inhab.id]){
+                for(Mail__c mail:[SELECT name, on_route__c, Shipping_to__c, Receiver__c, Tracking_Code__c, Status__c, Delivered_Time__c, Value__c FROM Mail__c WHERE Status__c != 'Delivered' AND Receiver__c =: inhab.id]){
                     userMails.add(mail);
                 }
             }

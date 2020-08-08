@@ -1,5 +1,6 @@
 <apex:page controller="AccountDisplayController" lightningStylesheets="true" >    
-
+<!-- Displays the users account information, if there is nothing to be displayed it
+, then a different message will display-->
 <apex:form style="display:{!IF(acc != null, 'block','none')}">
     <apex:commandButton value="Save" action="{!save}" id="saveButton" />
     <apex:pageBlock >
@@ -26,9 +27,6 @@
         </apex:pageBlockTable>
         <apex:pageBlockTable value="{!acc}" var="ac">
             <apex:column value="{!ac.Website}"/><br />
-        </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac" >
-            <apex:column value="{!ac.YearStarted}"/><br />
         </apex:pageBlockTable>
         <apex:inlineEditSupport event="ondblClick" showOnEdit="saveButton" />
     </apex:pageBlock>

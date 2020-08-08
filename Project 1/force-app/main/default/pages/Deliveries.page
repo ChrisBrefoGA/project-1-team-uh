@@ -90,28 +90,7 @@
                     <apex:facet name="header">Date/Time of Delivery</apex:facet>
                     <apex:outputField value="{!ml.Delivered_Time__c}" />
                 </apex:column>
-        </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!mailList}" var="ml">
-                <apex:column >
-                    <apex:facet name="header">Last Modified By</apex:facet>
-                    <apex:outputField value="{!ml.LastModifiedBy.Name}" />
-                </apex:column>
-        </apex:pageBlockTable>
-            
+        </apex:pageBlockTable>        
         </div>
-        
-        <!-- <apex:pageBlockTable value="{!mailList}" var="ml">
-                <apex:column >
-                    <apex:facet name="header">On Route</apex:facet>
-                    <apex:outputField value="{!ml.On_Route__c}" />
-                </apex:column>
-        </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!mailList}" var="ml">
-                <apex:column >
-                    <apex:facet name="header">Shipping To</apex:facet>
-                    <apex:outputField value="{!ml.Shipping_To__c}" />
-                </apex:column>
-        </apex:pageBlockTable> -->
-        
     </apex:pageBlock>
 </apex:page>
