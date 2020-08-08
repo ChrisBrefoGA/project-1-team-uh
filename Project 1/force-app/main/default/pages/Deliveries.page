@@ -36,6 +36,7 @@
             width: 45vw; 
             border-top:solid; 
             border-width:2px 1px 0px 0px;
+            float: right;
         
         }
         
