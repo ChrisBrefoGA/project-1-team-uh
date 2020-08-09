@@ -1,4 +1,4 @@
-public with sharing class DeliveriesController {
+public class DeliveriesController {
     
     public List<Mail__c> mailList{get;set;}
     public Contact contact {get;set;}
@@ -6,14 +6,12 @@ public with sharing class DeliveriesController {
     Map<String, String> session{get;set;}
     public String errorMessage {get;set;}
     String userId {get;set;}
-    
-   
+     
     public DeliveriesController(){
-        
         session = Auth.SessionManagement.getCurrentSession();     
         String userId = session.get('UsersId');
                
-        User currentUser = [SELECT ContactId FROM User WHERE Id = :userId];
+        User currentUser = [SELECT ContactId FROM User WHERE Id =: '0053t0000089xqYAAQ'];
         contact = [SELECT id FROM Contact WHERE id =: currentUser.ContactId];
         inhabitants = new List<Inhabitant__c>();
         mailList = new List<Mail__c>();
@@ -41,5 +39,4 @@ public with sharing class DeliveriesController {
         }
         
     }
-
 }

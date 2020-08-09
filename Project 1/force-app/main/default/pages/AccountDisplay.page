@@ -1,39 +1,42 @@
-<apex:page controller="AccountDisplayController" lightningStylesheets="true" >    
-<!-- Displays the users account information, if there is nothing to be displayed it
-, then a different message will display-->
-<apex:form style="display:{!IF(acc != null, 'block','none')}">
-    <apex:commandButton value="Save" action="{!save}" id="saveButton" />
-    <apex:pageBlock >
-        <apex:pageBlockTable value="{!acc}" var="ac">
-            <apex:column value="{!ac.Name}"/><br />
-        </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
-            <apex:column value="{!ac.Type}"/><br />
-        </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
-             <apex:column value="{!ac.AccountNumber}"/><br />
-        </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
-             <apex:column value="{!ac.Type}"/><br />        
-        </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
-            <apex:column value="{!ac.Industry}"/><br />
-        </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
-            <apex:column value="{!ac.Phone}"/><br />
-        </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
-            <apex:column value="{!ac.NumberOfEmployees}"/><br />
-        </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac">
-            <apex:column value="{!ac.Website}"/><br />
-        </apex:pageBlockTable>
-        <apex:inlineEditSupport event="ondblClick" showOnEdit="saveButton" />
-    </apex:pageBlock>
-</apex:form>
-<h1 style="display:{!IF(acc != null, 'none','block')}">
-    There are no accounts associated with your profile.
-</h1>
+<apex:page controller="AccountDisplayController" >
+    <apex:slds />
+    
+    
+    <apex:form style=" display:{!IF(acc != null, 'block','none')}" title="My Information">
+        <apex:commandButton value="Save" action="{!save}" id="saveButton" />
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!acc}" var="ac">
+                <apex:column value="{!ac.Name}"/>
+            </apex:pageBlockTable>
+            <apex:pageBlockTable value="{!acc}" var="ac">
+                <apex:column value="{!ac.Type}" />
+            </apex:pageBlockTable>
+            <apex:pageBlockTable value="{!acc}" var="ac">
+                <apex:column value="{!ac.AccountNumber}" />
+            </apex:pageBlockTable>
+            <apex:pageBlockTable value="{!acc}" var="ac">
+                <apex:column value="{!ac.Type}" />
+            </apex:pageBlockTable>
+            <apex:pageBlockTable value="{!acc}" var="ac">
+                <apex:column value="{!ac.Industry}" />
+            </apex:pageBlockTable>
+            <apex:pageBlockTable value="{!acc}" var="ac">
+                <apex:column value="{!ac.Phone}" />
+            </apex:pageBlockTable>
+            <apex:pageBlockTable value="{!acc}" var="ac">
+                <apex:column value="{!ac.NumberOfEmployees}" />
+            </apex:pageBlockTable>
+            <apex:pageBlockTable value="{!acc}" var="ac">
+                <apex:column value="{!ac.Website}" />
+            </apex:pageBlockTable>
+            <apex:inlineEditSupport event="ondblClick" showOnEdit="saveButton" />
+            
+        </apex:pageBlock>
+    </apex:form>
+    <h1 style="font-size: 18px; display:{!IF(acc != null, 'none','block')}">
 
-
+        There are no accounts associated with your profile.
+    </h1>
+    
+    
 </apex:page>

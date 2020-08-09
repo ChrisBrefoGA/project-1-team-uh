@@ -1,2 +1,18 @@
-<apex:page >
+<apex:page title="My Closed Cases" controller="PastCasesController">
+    <apex:slds />
+    <apex:form style="display:{!IF(cases != null, 'block','none')}">
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!cases}" var="c">
+                <apex:column value="{!c.CaseNumber}"/><br />
+                <apex:column value="{!c.Priority}"/><br />
+                <apex:column value="{!c.Status}"/><br />
+                <apex:column value="{!c.Reason}"/><br />
+                <apex:column value="{!c.Description}"/><br />
+                <apex:column value="{!c.Comments}"/><br />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+    <h1 style="display:{!IF(cases != null, 'none','block')}">
+        There are no accounts associated with your profile.
+    </h1>
 </apex:page>

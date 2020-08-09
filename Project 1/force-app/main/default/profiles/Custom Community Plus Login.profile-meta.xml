@@ -933,7 +933,7 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>CurrentCasesDisplay</apexPage>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
         <apexPage>Deliveries</apexPage>
@@ -973,7 +973,7 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>PastCasesDisplay</apexPage>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
         <apexPage>SiteLogin</apexPage>

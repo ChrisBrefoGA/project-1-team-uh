@@ -1,11 +1,12 @@
-<apex:page controller="MailPackageController" >
+<apex:page title="My Non-Delivered Packages" controller="MailPackageController" >
+    <apex:slds />
     <h1>
         {!$User.Email}
         {!$User.FirstName}
         {!$User.LastName}
     </h1>
     <apex:form style="display:{!IF((inhabitants == null || userMails == null), 'none','block')}" >
-        <apex:pageBlock >
+        <apex:pageBlock title="My Non-Delivered Packages">
         	<apex:pageBlockTable value="{!userMails}" var="mail">
                 <apex:column value="{!mail.name}"/>
             	<apex:column value="{!mail.Tracking_Code__c}"/>
