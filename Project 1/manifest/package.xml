@@ -75,6 +75,10 @@
         <members>*</members>
         <name>Queue</name>
    </types>
+   <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
    <!--
     <types>
         <members>*</members>
