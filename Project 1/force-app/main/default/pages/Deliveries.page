@@ -36,15 +36,14 @@
             width: 45vw; 
             border-top:solid; 
             border-width:2px 1px 0px 0px;
-            float: right;
-        
+        	  float: right;
         }
         
         <!-- 717 × 932 -->
     </style>
     <apex:pageBlock title="My Mail" id="pageBlock">
         <apex:facet name="header">&nbsp;&nbsp;My Mail</apex:facet>
-        <div style="display:inline-block; position: relative; width: 45vw; border-top:solid; border-width:2px 1px 0px 0px;">
+        <div class="firstHalf">
             <apex:pageBlockTable value="{!mailList}" var="ml">
                 <apex:column >
                     <apex:facet name="header">Name</apex:facet>
@@ -72,7 +71,7 @@
                 </apex:column>
         </apex:pageBlockTable>
         </div>
-        <div style="display:inline-block; position: relative; width: 45vw; border-top:solid; border-width:2px 1px 0px 0px;">
+        <div class="secondHalf">
 
             <apex:pageBlockTable value="{!mailList}" var="ml">
                 <apex:column >
