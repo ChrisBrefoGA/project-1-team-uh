@@ -1,35 +1,8 @@
-<apex:page controller="AccountDisplayController" lightningStylesheets="true">
-    <!--<style>
-        .formyform{
-        	width: 1000px;
-        	border: solid 2px;
-        	border-collapse: collapse;
-        }
-        
-        
-        .blockyblock th{
-        	color: black;
-        	background-color: orange;
-        	horizontal-align: middle;
-        	
-        }
-        
-        .blockyblock td{
-        	color: green;
-        	horizontal-align: middle;
-        }   
-        
-        .pageButton {
-        
-        }
-        
-        .pageButton saveButton:hover {
-        	cursor: pointer;
-        }
-    </style>
--->
-    
-<apex:form styleClass="formyform">
+<apex:page controller="AccountDisplayController" lightningStylesheets="true" >    
+<!-- Displays the users account information, if there is nothing to be displayed it
+, then a different message will display-->
+<apex:form style="display:{!IF(acc != null, 'block','none')}">
+    <apex:commandButton value="Save" action="{!save}" id="saveButton" />
     <apex:pageBlock >
         <apex:pageBlockTable value="{!acc}" var="ac">
             <apex:column value="{!ac.Name}"/><br />
@@ -55,16 +28,12 @@
         <apex:pageBlockTable value="{!acc}" var="ac">
             <apex:column value="{!ac.Website}"/><br />
         </apex:pageBlockTable>
-        <apex:pageBlockTable value="{!acc}" var="ac" >
-            <apex:column value="{!ac.YearStarted}"/><br />
-        </apex:pageBlockTable>
         <apex:inlineEditSupport event="ondblClick" showOnEdit="saveButton" />
-        <apex:pageBlockButtons >
-              <apex:commandButton value="Save" action="{!save}" id="saveButton" />
-        </apex:pageBlockButtons>
     </apex:pageBlock>
 </apex:form>
-
+<h1 style="display:{!IF(acc != null, 'none','block')}">
+    There are no accounts associated with your profile.
+</h1>
 
 
 </apex:page>

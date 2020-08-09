@@ -1,6 +1,6 @@
-global with sharing class BatchApex implements Database.Batchable<sObject> {
+global with sharing class BatchApex{
 
-    global Database.QueryLocator start(Database.BatchableContext BC){
+  /* global Database.QueryLocator start(Database.BatchableContext BC){
         String query = 'SELECT Id FROM Contact WHERE MailingState = null';
         return database.getQueryLocator(query);
     }
@@ -14,7 +14,7 @@ global with sharing class BatchApex implements Database.Batchable<sObject> {
     
     global void finish(Database.BatchableContext BC){
         
-    }
+    }*/
     
     
     

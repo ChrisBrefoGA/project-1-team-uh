@@ -63,15 +63,19 @@
         <members>*</members>
         <name>Layout</name>
     </types>
-<!--
     <types>
-        <members>*</members>
-        <name>Custom​Metadata</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>MailReportsFolder/Past_Delivered_Packages_LUu</members>
         <name>Report</name>
    </types>
+   <types>
+        <members>Mail_Reports</members>
+        <name>ReportType</name>
+   </types>
+    <types>
+        <members>*</members>
+        <name>Queue</name>
+   </types>
+   <!--
     <types>
         <members>*</members>
         <name>Dashboard</name>
